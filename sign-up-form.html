@@ -2,52 +2,65 @@
 <html>
 <head>
     <link rel="stylesheet" href="sign-up-form.css">
-    <title class="title">Odin Sign-up Form</title>
-    <head>
-        <div class="image">
-            <img src="images/halie-west-25xggax4bSA-unsplash.jpg">
-            <img src="images/odin-lined.png">
-            <div class="company-name">ODIN</div>
-            <div class="info">This is not a real online service! You know you need something like this
-            in your life to help you realize your deepest dreams. Sign up now to get started.
+    <title>Odin Sign-up Form</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+<body>
+    <div class="image">
+        <img src="images/halie-west-25xggax4bSA-unsplash.jpg" alt="Background">
+        <img src="images/odin-lined.png" alt="Odin Logo">
+        <div class="company-name">ODIN</div>
+        <div class="info">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</div>
+        <div class="statement">Lets do this!</div>
+    </div>
+    
+    <div style="width: 50%; display: flex; flex-direction: column;">
+        <form action="example.com/path" method="post">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="first_name">FIRST NAME</label>
+                    <input type="text" id="first_name" name="first_name">
+                </div>
+                <div class="form-group">
+                    <label for="last_name">LAST NAME</label>
+                    <input type="text" id="last_name" name="last_name">
+                </div>
             </div>
-            <div class="statement">Lets do this!</div>
-        </div>
-        
-    </head>
-    <body>
-        <form class="form" action="example.com/path" method="post">
-            <div class="user-creds">
-                <label for="first_name">First Name:</label>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="phone_number">PHONE NUMBER</label>
+                    <input type="tel" id="phone_number" name="phone_number">
+                </div>
             </div>
-            <input type="text">
-            <div class="user-creds">
-                <label for="last_name">Last Name:</label>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <div class="form-group">
+                    <label for="confirm_password">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirm_password" name="confirm_password">
+                </div>
             </div>
-            <input type="text">
-            <div class="user-creds">
-                <label for="email">Email:</label>
-            </div>
-            <input type="text">
-            <div class="user-creds">
-                <label for="phone_number">Phone Number:</label>
-            </div>
-            <input type="text">
-            <div class="password">
-                <label for="password">Password:</label>
-            </div>
-            <input type="text">
-            <div class="password">
-                <label for="confirm_password">Confirm Password:</label>
-            </div>
-            <input type="text">
+
+            <button type="submit" class="create-account-button">Create Account</button>
         </form>
-        <button class="create-account-button">Create Account</button>
+
         <div class="log-in-statement">
-            <div>Already have an account?</div>
-            <div>Log in</div>
+            <span>Already have an account?</span>
+            <a href="#">Log in</a>
         </div>
-    </body>
+    </div>
+</body>
+</html>
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     </style>
